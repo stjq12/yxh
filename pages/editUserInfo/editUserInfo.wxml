@@ -1,0 +1,35 @@
+<!--pages/editUserInfo/editUserInfo.wxml-->
+<view class="page">
+  <view class="box">
+    <view class="header">
+      <view class="userinfoAvatar">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view bindtap="changeHead">更换头像</view>
+    </view>
+    <view class="inputList" wx:for="{{inputList}}" wx:key="*this">
+      <view class="inputBox">
+        <view class="inputTitle">{{item.title}}</view>
+        <view class="inputDetail">
+          <input name="log" bindinput="accountInput" placeholder="{{item.input}}" placeholder-style="color:#999999;" />
+        </view>
+      </view>
+      <view class="hr"></view>
+    </view>
+    <view class="inputBox">
+      <view class="inputTitle">性别</view>
+      <view class="inputDetail">
+        <picker mode="selector" bindchange="sexChange" value="{{sexIndex}}" range="{{sexList}}" bindchange="bindPickerChange">
+          <view style="color: #999999">
+            {{sexList[sexIndex]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="saveChange">
+      <view class="save" bindtap="save">保存</view>
+      <view class="noSave" bindtap="noSave">取消</view>
+    </view>
+  </view>
+</view>

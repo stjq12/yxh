@@ -1,0 +1,25 @@
+<view>
+  <image class="titlePic" mode="widthFix" src="{{url}}/yxh/index/001.JPG"></image>
+  <view class="main">
+    <view class="title">
+      IGN评选Switch最佳游戏top25：《塞尔达传说》天下第一
+    </view>
+    <view class="rowAuthor">
+      <image src="{{url}}/yxh/head/001.JPG"></image>
+      <view class="column2">
+        <view>游侠资讯网</view>
+        <view>4小时前</view>
+      </view>
+      <view class="attention">+关注</view>
+    </view>
+    <view class="detail">
+      任天堂Switch主机只上市了3年时间，不过已经拥有了庞大的游戏阵容，包括独占大作《塞尔达传说》、《马里奥奥德赛》和第三方精品《杀戮尖塔》、《星露谷物语》等。近日外媒IGN发布了一份NS游戏排名，选出了25款他们玩过、享受过、且最适合在NS上玩的优秀游戏，一起来看看吧！
+    </view>
+    <image mode="widthFix" src="{{url}}/yxh/index/002.PNG"></image>
+  </view>
+  <view class="operate">
+    <input type="text" placeholder="快来发表你的意见吧"></input>
+    <image src="/icon/评论2.png"></image>
+    <image src="/icon/点赞2.png"></image>
+  </view>
+</view>

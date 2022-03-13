@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fans/fans",
+    "pages/comDetail/comDetail",
+    "pages/feedback/feedback",
+    "pages/gameDetail/gameDetail",
+    "pages/xwDetail/xwDetail",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/yxLib/yxLib",
+    "pages/regist/regist",
+    "pages/community/community",
+    "pages/editUserInfo/editUserInfo",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "游戏盒",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "color": "#8a8a8a",
+    "selectedColor": "#2c2c2c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/sjx1.png",
+        "selectedIconPath": "icon/sjx2.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "icon/y1.png",
+        "selectedIconPath": "icon/y2.png"
+      },
+      {
+        "pagePath": "pages/yxLib/yxLib",
+        "text": "游戏库",
+        "iconPath": "icon/x1.png",
+        "selectedIconPath": "icon/x2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "icon/zfx1.png",
+        "selectedIconPath": "icon/zfx2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

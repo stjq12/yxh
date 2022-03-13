@@ -1,0 +1,87 @@
+<!--pages/yxLib/yxLib.wxml-->
+<view>
+  <!-- 顶栏 -->
+  <view class="header">
+    <view class="tapName {{tapIndex == 0?'tapIndex':''}}" bindtap="changeTap" data-index="0">推荐</view>
+    <view class="tapName {{tapIndex == 1?'tapIndex':''}}" bindtap="changeTap" data-index="1">榜单</view>
+    <view class="tapIcon">
+      <image mode="aspectFit" src="/icon/信息.png"></image>
+    </view>
+    <view class="tapIcon">
+      <image mode="aspectFit" src="/icon/搜索.png"></image>
+    </view>
+  </view>
+  <swiper class="tapSwiper" current="{{tapIndex}}" bindchange="slipTap">
+    <!-- 推荐 -->
+    <swiper-item>
+      <scroll-view class="tap" scroll-y>
+        <view class="pageTap">
+          <view class="row1">
+            <view>
+              <image src="/icon/赠送游戏.png"></image>
+              <view>赠送游戏</view>
+            </view>
+            <view>
+              <image src="/icon/即将发售.png"></image>
+              <view>即将发售</view>
+            </view>
+            <view>
+              <image src="/icon/游戏中心.png"></image>
+              <view>游戏中心</view>
+            </view>
+            <view>
+              <image src="/icon/游戏厂商.png"></image>
+              <view>游戏厂商</view>
+            </view>
+            <view>
+              <image src="/icon/H币商城.png"></image>
+              <view>H币商城</view>
+            </view>
+          </view>
+          <view class="recommendTitle">
+            <view>为您推荐</view>
+            <view>更多></view>
+          </view>
+          <view class="gameList">
+            <view class="gameBox" wx:for="{{gameList}}" wx:key="*this" bindtap="toGameDetail">
+              <image src="{{url}}/yxh/game/{{item.photo}}"></image>
+              <view class="name">{{item.name}}</view>
+              <view class="type">
+                <view>{{item.type1}}</view>
+                <view wx:if="{{item.type2 != 'null'}}">{{item.type2}}</view>
+              </view>
+              <view>
+                <view class="price">￥{{item.price}}</view>
+                <view class="discount">{{item.discount}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 榜单 -->
+    <swiper-item>
+      <scroll-view scroll-y class="tap">
+        <view class="pageTap">
+          <view class="myComRow3Title">
+            <view wx:for="{{row3Title}}" wx:key="id" id="{{row3Index == item.id?'row3Index':''}}"
+              bindtap="changeRow3" data-index="{{item.id}}">{{item.name}}</view>
+          </view>
+          <view class="gameList2">
+            <view class="gameBox2" wx:for="{{gameList}}" wx:key="*this">
+              <image src="{{url}}/yxh/game/{{item.photo}}"></image>
+              <view class="gameMes2">
+                <view class="title">{{item.name}}</view>
+                <view>
+                  <view class="price">￥{{item.price}}</view>
+                  <view class="discount">{{item.discount}}</view>
+                </view>
+              </view>
+              <view class="score">{{item.score}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

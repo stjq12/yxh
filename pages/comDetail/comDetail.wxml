@@ -1,0 +1,32 @@
+<!--pages/comDetail/comDetail.wxml-->
+<view class="pages">
+  <view class="title">
+    <image src="{{url}}/yxh/community/1.png"></image>
+    <view class="row1title">《命运2》专区</view>
+  </view>
+  <view class="main">
+    <view class="mainTit">
+      <view>24小时版</view>
+      <view>最新发布</view>
+      <view>最新回复</view>
+    </view>
+    <view class="mesList">
+      <view class="mesBox" wx:for="{{communityMesList}}" wx:key="*this">
+        <view class="mesTop">
+          <view class="mesNumber">{{index+1}}</view>
+          <view class="userName">{{item.userName}}</view>
+        </view>
+        <view class="mesTitle">{{item.title}}</view>
+        <view wx:if="{{item.pic != 'null'}}" class="mesPic">
+          <image mode="aspectFill" src="{{url}}/yxh/community/{{item.pic}}"></image>
+        </view>
+        <view class="operation">
+          <image mode="heightFix" src="/icon/评论.png"></image>
+          <view>{{item.comment}}</view>
+          <image mode="heightFix" src="/icon/点赞.png"></image>
+          <view>{{item.like}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

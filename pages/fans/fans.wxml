@@ -1,0 +1,14 @@
+<!--pages/fans/fans.wxml-->
+<view>
+  <view class="title">我的粉丝</view>
+  <view class="fansList">
+    <view class="fansBox" wx:for="{{fansList}}" wx:key="*this">
+      <image src="{{url}}/yxh/game/{{item.pic}}"></image>
+      <view class="mes2">
+        <view class="userName">{{item.name}}</view>
+        <view class="introduction">{{item.introduction}}</view>
+      </view>
+      <view class="attention">关注</view>
+    </view>
+  </view>
+</view>

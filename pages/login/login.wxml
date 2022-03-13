@@ -1,0 +1,34 @@
+<!--pages/login/login.wxml-->
+<view>
+  <view class="loginTitle">用户登录</view>
+  <!-- 表单 -->
+  <form bindsubmit='formSubmit'>
+    <view class="inputBox">
+      <view class="inputName">账号</view>
+      <view><input name="log" placeholder="请输入您的账号" placeholder-style="color:#999999;" /></view>
+    </view>
+    <view class="hr"></view>
+    <view class="inputBox">
+      <view class="inputName">密码</view>
+      <view><input name="pwd" placeholder="请输入密码" password placeholder-style="color:#999999;" /></view>
+    </view>
+    <view class="hr"></view>
+    <button class="loginBtn" form-type='submit'>登录</button>
+  </form>
+
+  <view class="other">
+    <view class="row1">
+      <view class="row1Box">
+        <image src="/icon/注册.png"></image>
+        <view bindtap="toRegist">去注册</view>
+      </view>
+      <view class="row1Box">
+        <image src="/icon/微信.png"></image>
+        <view>微信登录</view>
+      </view>
+    </view>
+    <view class="row2">
+      登录即表明同意《游戏盒服务及隐私条款》以及《中国移动认证服务条款》
+    </view>
+  </view>
+</view>

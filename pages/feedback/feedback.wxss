@@ -1,0 +1,20 @@
+/* pages/feedback/feedback.wxss */
+.title{
+  font-size: larger;
+  font-weight: bolder;
+}
+.detail{
+  color: #555;
+  margin-top: 2vw;
+}
+textarea{
+  border: 1px solid rgba(100,100,100,0.2);
+  width: 94vw;
+  height: 50vw;
+  margin-top: 3vw;
+  border-radius: 5%;
+}
+.phone{
+  text-align: right;
+  margin-top: 3vw;
+}

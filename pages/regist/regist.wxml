@@ -1,0 +1,19 @@
+<!--pages/regist/regist.wxml-->
+<view>
+  <view class="loginTitle">注册账号</view>
+  <!-- 表单 -->
+  <form bindsubmit='formSubmit'>
+    <view class="inputBox">
+      <view class="inputName">昵称</view>
+      <view><input name="userName" placeholder="请输入您的昵称" placeholder-style="color:#999999;" /></view>
+    </view>
+    <view class="hr"></view>
+    <view class="inputBox">
+      <view class="inputName">密码</view>
+      <view><input name="pwd" placeholder="请输入密码" password placeholder-style="color:#999999;" /></view>
+    </view>
+    <view class="hr"></view>
+    <button class="loginBtn" form-type='submit'>登录</button>
+  </form>
+  <view class="toLogin" bindtap="toLogin">已有账号？去登陆 ></view>
+</view>

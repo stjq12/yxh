@@ -1,0 +1,123 @@
+/* pages/comDetail/comDetail.wxss */
+.pages{
+  background-color: rgb(84, 110, 118);
+}
+.title{
+  width: 100vw;
+  height: 26vw;
+  display: flex;
+  background-color: rgb(84, 110, 118);
+}
+.title>image{
+  width: 26vw;
+  height: 26vw;
+}
+.title>view{
+  color: white;
+  line-height: 26vw;
+  height: 26vw;
+  font-size: large;
+}
+.main{
+  border-radius: 5vw 5vw 0 0;
+  min-height: 10vw;
+  width: 100vw;
+  background-color: white;
+  padding: 3vw 0 3vw 0;
+}
+.mainTit{
+  display: flex;
+}
+.mainTit>view{
+  padding: 2vw;
+  color: #555;
+}
+.mainTit :first-child{
+  color: black;
+  font-weight: bold;
+}
+
+.mesBox{
+  width: 100%;
+  border-bottom: 1px solid rgba(100,100,100,0.1);
+}
+.mesTop{
+  width: 97vw;
+  padding: 3vw 0 0 3vw;
+}
+.mesNumber{
+  display: inline-block;
+  margin-left: 3vw;
+  text-align: center;
+}
+.mesList :first-child>.mesTop>.mesNumber{
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 50%;
+  background-color: orangered;
+  color: white;
+}
+.mesList :nth-child(2)>.mesTop>.mesNumber{
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 50%;
+  background-color: purple;
+  color: white;
+}
+.mesList :nth-child(3)>.mesTop>.mesNumber{
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+}
+.mesType{
+  display: inline-block;
+  font-weight: bold;
+  color: #555;
+  margin-left: 3vw;
+}
+.userName{
+  display: inline-block;
+  color: #999;
+  margin-left: 3vw;
+  font-size: small;
+}
+.mesTitle{
+  padding: 3vw;
+  display: -webkit-box;
+  white-space: pre-line;
+  -webkit-line-clamp: 2; /*最大行数*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.mesPic{
+  width: 20vw;
+  height: 20vw;
+  margin-left: 5vw;
+  margin-bottom: 3vw;
+}
+.mesPic>image{
+  width: 100%;
+  height: 100%;
+}
+.operation{
+  margin-bottom: 3vw;
+}
+.operation image{
+  display: inline-block;
+  margin-left: 4vw;
+  height: 3vw;
+}
+.operation view{
+  display: inline-block;
+  margin-left: 1vw;
+  height: 3vw;
+  font-size: small;
+  color: #888;
+}

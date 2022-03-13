@@ -1,0 +1,75 @@
+/* pages/editUserInfo/editUserInfo.wxss */
+.page{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(245,245,245);
+  padding-top: 5vw;
+}
+.box{
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0 10rpx 20rpx 10rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.header{
+  width: 100%;
+  height: 240rpx;
+  align-items: center;
+  padding: 30rpx 0 0 0;
+}
+.header view{
+  margin: 0 auto;
+  text-align: center;
+  color: #444;
+  margin-bottom: 30rpx;
+}
+.userinfoAvatar {
+  overflow: hidden;
+  display: block;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  border: 2px solid rgba(200,200,200,0.3);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.inputBox{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 90%;
+  background-color: transparent;
+}
+.inputTitle{
+  margin-right: 30px;
+  color: #444;
+}
+.hr{
+ border: 1px solid #cccccc;
+ opacity: 0.2;
+ width: 90%;
+ margin: 0 auto;
+}
+.saveChange{
+  width: 100%;
+  display: flex;
+  margin-top: 50rpx;
+}
+.saveChange view{
+  flex: 1;
+  margin: 20rpx;
+  text-align: center;
+  line-height: 60rpx;
+  height: 60rpx;
+  border-radius: 20rpx;
+}
+.save{
+  background-color: #222;
+  color: white;
+}
+.noSave{
+  background-color: rgba(100,100,100,0.2);
+}

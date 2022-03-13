@@ -1,0 +1,60 @@
+<!--pages/gameDetail/gameDetail.wxml-->
+<view>
+  <view class="gameTitle">
+    侠盗猎车手5
+  </view>
+  <view class="myComRow3Title">
+    <view wx:for="{{row3Title}}" wx:key="*this" id="{{row3Index == item.id?'row3Index':''}}" bindtap="changeRow3"
+      data-index="{{item.id}}">{{item.name}}</view>
+  </view>
+  <image class="gamePic" mode="widthFix" src="{{url}}/yxh/game/11.png"></image>
+  <view class="mes1">
+    <view class="price">￥59</view>
+    <view class="discount">
+      <view class="disRow1">历史最低</view>
+      <view class="disRow2">
+        <view>-50%</view>
+        <view>￥119</view>
+        <view>6天后截止</view>
+      </view>
+    </view>
+  </view>
+  <view class="mes2">
+    <view class="mes2Col1">
+      <view>侠盗猎车手5</view>
+      <view>Grand Theft Auto V</view>
+    </view>
+    <view class="mes2Col2">9.6</view>
+  </view>
+  <view class="mes3">
+    <view>开放世界</view><view>多人</view><view>犯罪</view><view>第三人称视角</view><view>+</view>
+  </view>
+  <view class="mes4">
+    <view>
+      <view>14.6万</view>
+      <view>当前在线</view>
+    </view>
+    <view>
+      <view>16.6万</view>
+      <view>昨日峰值在线</view>
+    </view>
+    <view>
+      <view>17.6万</view>
+      <view>月平均在线</view>
+    </view>
+    <view>
+      <view>446万</view>
+      <view>游戏盒玩家数</view>
+    </view>
+  </view>
+  <view class="mes5">
+    <view class="mes5Title">游戏简介</view>
+    <view class="mes5Detail">
+      在意大利移民遗留下来的古老传统的影响下，家族成为美国黑帮文化的一个重要组成部分，对那些无法无天的帮派份子来说，家族与亲人，在他们心中有着无法言谕的地位。这次我们的主角天才罪犯卡尔·强森（朋友们都叫他CJ）在过了5年平静的生活之后，忽闻母亲在家乡遇害。这时他身体中的“帮派之血”再次熊熊燃烧起来，现在CJ便要重返圣安德列亚，在明争暗斗的几个地下势力之间再次掀起新一轮的腥风血雨。这次CJ将会投靠自己的哥哥，重振橙林家族。《侠盗猎车手圣安地列斯》游戏舞台由前作的佛罗里达移至加州，虚构的圣安德列亚市是由三个城市（Los Santos、以洛山矶为原型，San Fierro、以旧金山为原型，Las Venturra、以拉斯维加斯为原型）和绵延数里的高速公路、沙漠、山脉、河流湖泊组成，圣安地列斯范围会比以前的Vice City大上五六倍，在这里你可以找到各式风格不同的景观，事实上你将其称为一个微缩的世界亦不为过。
+    </view>
+  </view>
+  <view class="operate">
+    <view>关注</view>
+    <view>￥54.8 购买</view>
+  </view>
+</view>

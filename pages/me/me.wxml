@@ -1,0 +1,29 @@
+<!--pages/me/me.wxml-->
+<view class="page">
+  <view class="meTop">
+  </view>
+  <view class="userBox" bindtap="edit">
+    <view class="userinfoAvatar">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="userInfoMes">
+      <view class="userName">{{userInfo.userName}}</view>
+      <view class="userSay">{{userInfo.say}}</view>
+    </view>
+    <view class="editIcon">
+      <image src="/icon/设置.png"></image>
+    </view>
+  </view>
+  <view class="userRow2">
+    <view><view>{{userInfo.attention}}</view><view>关注</view></view>
+    <view><view>{{userInfo.fans}}</view><view>粉丝</view></view>
+    <view><view>{{userInfo.collect}}</view><view>收藏</view></view>
+    <view><view>{{userInfo.history}}</view><view>浏览记录</view></view>
+  </view>
+  <view class="userRow3">
+    <view class="row3Box" wx:for="{{row3List}}" wx:key="*this" bindtap="toOperate" data-operate="{{item.operate}}">
+      <image src="/icon/{{item.icon}}"></image>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+</view>

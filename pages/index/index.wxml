@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view>
+  <!-- 顶栏 -->
+  <view class="header">
+    <view class="tapName {{tapIndex == 0?'tapIndex':''}}" bindtap="changeTap" data-index="0">推荐</view>
+    <view class="tapName {{tapIndex == 1?'tapIndex':''}}" bindtap="changeTap" data-index="1">关注</view>
+    <view class="tapIcon">
+      <image mode="aspectFit" src="/icon/信息.png"></image>
+    </view>
+    <view class="tapIcon">
+      <image mode="aspectFit" src="/icon/搜索.png"></image>
+    </view>
+  </view>
+  <swiper class="tapSwiper" current="{{tapIndex}}" bindchange="slipTap">
+    <!-- 推荐页 -->
+    <swiper-item>
+      <scroll-view class="tap" scroll-y>
+        <view class="pageTap">
+          <!-- 轮播 -->
+          <swiper class="slideshow" indicator-dots circular autoplay interval="3000">
+            <swiper-item wx:for="{{lbPhoto}}" wx:key="*this">
+              <image mode="aspectFill" src="{{url}}/yxh/{{item.src}}"></image>
+            </swiper-item>
+          </swiper>
+          <!-- 下方列表 -->
+          <view class="xwList">
+            <view class="xwBox" wx:for="{{xwList}}" wx:key="*this" bindtap="toDetail">
+              <view class="xwMes">
+                <view class="xwMesTitle">{{item.title}}</view>
+                <view class="row2">
+                  <view class="xwMesType">
+                    {{item.type}}
+                  </view>
+                  <image src="/icon/评论.png"></image>
+                  <view class="xwComType">
+                    {{item.comment}}
+                  </view>
+                  
+                </view>
+              </view>
+              <view class="xwPic">
+                <image mode="aspectFill" src="{{url}}/yxh/index/{{item.pic}}"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y class="tap">
+        <view class="pageTap">
+          <view class="mesList">
+            <view class="mesBox" wx:for="{{mesList}}" wx:key="*this">
+              <!-- 用户信息栏 -->
+              <view class="userRow">
+                <view class="userPic">
+                  <image mode="aspectFill" src="{{url}}/yxh/head/{{item.head}}"></image>
+                </view>
+                <view class="userName">{{item.userName}}</view>
+                <view class="more">
+                  <image src="/icon/更多.png" mode="aspectFit"></image>
+                </view>
+              </view>
+              <view class="detail">{{item.detail}}</view>
+              <view class="mesPic">
+                <image mode="aspectFill" src="{{url}}/yxh/mes/{{item.pic1}}"></image>
+                <image mode="aspectFill" src="{{url}}/yxh/mes/{{item.pic2}}"></image>
+                <image mode="aspectFill" src="{{url}}/yxh/mes/{{item.pic3}}"></image>
+              </view>
+              <view class="operation">
+                <view class="operationFlex">
+                  <view>
+                    <image mode="heightFix" src="/icon/分享.png"></image>
+                    <view>{{item.share}}</view>
+                  </view>
+                </view>
+                <view class="operationFlex">
+                  <view>
+                    <image mode="heightFix" src="/icon/评论.png"></image>
+                    <view>{{item.comment}}</view>
+                  </view>
+                </view>
+                <view class="operationFlex">
+                  <view>
+                    <image mode="heightFix" src="/icon/点赞.png"></image>
+                    <view>{{item.like}}</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

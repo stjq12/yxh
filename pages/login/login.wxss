@@ -1,0 +1,70 @@
+/* pages/login/login.wxss */
+.loginTitle{
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: #555;
+  margin: 5vw;
+}
+.inputBox{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 90%;
+  background-color: transparent;
+}
+.inputName{
+  margin-right: 30px;
+  /* font-weight: bold; */
+}
+.hr{
+ border: 1px solid #cccccc;
+ opacity: 0.2;
+ width: 90%;
+ margin: 0 auto;
+}
+.loginBtn{
+  width: 80%;
+  margin-top:40px;
+  background-color: #222;
+  color: white;
+  text-decoration: underline;
+}
+.other{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 5vw;
+  width: 90vw;
+}
+.row1{
+  display: flex;
+  margin-bottom: 2vw;
+}
+.row1Box{
+  width: 40vw;
+  height: 10vw;
+  margin: 3vw;
+  padding: 1vw;
+  border-radius: 6vw;
+  border: 1px solid #222;
+  line-height: 10vw;
+  display: flex;
+}
+.row1Box>image{
+  width: 6vw;
+  height: 6vw;
+  padding: 2vw;
+  margin-left: 3vw;
+}
+.row1Box>view{
+  width: 18vw;
+  text-align: center;
+}
+.row2{
+  text-align: center;
+  font-size: small;
+  color: #888;
+}

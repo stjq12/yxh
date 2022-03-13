@@ -1,0 +1,161 @@
+/* pages/community/community.wxss */
+.mesBox{
+  width: 100%;
+  border-bottom: 1px solid rgba(100,100,100,0.1);
+}
+.mesTop{
+  width: 97vw;
+  padding: 3vw 0 0 3vw;
+}
+.mesNumber{
+  display: inline-block;
+  margin-left: 3vw;
+  text-align: center;
+}
+.mesList :first-child>.mesTop>.mesNumber{
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 50%;
+  background-color: orangered;
+  color: white;
+}
+.mesList :nth-child(2)>.mesTop>.mesNumber{
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 50%;
+  background-color: purple;
+  color: white;
+}
+.mesList :nth-child(3)>.mesTop>.mesNumber{
+  width: 5vw;
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+}
+.mesType{
+  display: inline-block;
+  font-weight: bold;
+  color: #555;
+  margin-left: 3vw;
+}
+.userName{
+  display: inline-block;
+  color: #999;
+  margin-left: 3vw;
+  font-size: small;
+}
+.mesTitle{
+  padding: 3vw;
+  display: -webkit-box;
+  white-space: pre-line;
+  -webkit-line-clamp: 2; /*最大行数*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.operation{
+  margin-bottom: 3vw;
+}
+.operation image{
+  display: inline-block;
+  margin-left: 4vw;
+  height: 3vw;
+}
+.operation view{
+  display: inline-block;
+  margin-left: 1vw;
+  height: 3vw;
+  font-size: small;
+  color: #888;
+}
+
+.myCom{
+  width: 94vw;
+  padding: 3vw;
+  height: 30vw;
+}
+.myComTitle{
+  width: 30rpx;
+  float: left;
+  font-size: large;
+  line-height: 50rpx;
+}
+.myComOpr{
+  width: 70rpx;
+  float: right;
+  color: #555;
+  line-height: 50rpx;
+}
+.myComRow2{
+  margin-top: 20rpx;
+}
+.myComRow2>view{
+  display: inline-block;
+  vertical-align: top;
+  width: 20vw;
+  margin-right: 3vw;
+}
+.myComRow2>view>image{
+  width: 100%;
+}
+.myComRow2>view>view{
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  color: #555;
+}
+.search{
+  width: 94vw;
+  height: 60rpx;
+  margin: 0 auto;
+  background-color: rgb(240,240,240);
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+}
+.search>image{
+  width: 30rpx;
+  height: 30rpx;
+  padding: 15rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+.search>input{
+  display: inline-block;
+  height: 30rpx;
+  max-height: 30rpx;
+  min-height: 30rpx;
+  line-height: 30rpx;
+  padding: 15rpx;
+  vertical-align: top;
+  font-size: small;
+}
+.myComRow3Title>view{
+  display: inline-block;
+  vertical-align: center;
+  padding: 1vw;
+  margin-right: 2vw;
+  color: #888;
+}
+#row3Index{
+  text-decoration: underline;
+  color: black;
+}
+.myComRow3{
+  padding: 1vw 0 3vw 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.myComRow3>image{
+  width: 29.33vw;
+  /* height: 30vw; */
+  margin-right: 2vw;
+  background-color: red;
+  margin-bottom: 2vw;
+}
+

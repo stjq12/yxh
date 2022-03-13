@@ -1,0 +1,69 @@
+<view>
+  <!-- 顶栏 -->
+  <view class="header">
+    <view class="tapName {{tapIndex == 0?'tapIndex':''}}" bindtap="changeTap" data-index="0">榜单</view>
+    <view class="tapName {{tapIndex == 1?'tapIndex':''}}" bindtap="changeTap" data-index="1">社区</view>
+    <view class="tapIcon">
+      <image mode="aspectFit" src="/icon/信息.png"></image>
+    </view>
+    <view class="tapIcon">
+      <image mode="aspectFit" src="/icon/搜索.png"></image>
+    </view>
+  </view>
+  <swiper class="tapSwiper" current="{{tapIndex}}" bindchange="slipTap">
+    <!-- 榜单 -->
+    <swiper-item>
+      <scroll-view class="tap" scroll-y>
+        <view class="pageTap">
+          <view class="mesList">
+            <view class="mesBox" wx:for="{{communityMesList}}" wx:key="*this">
+              <view class="mesTop">
+                <view class="mesNumber">{{index+1}}</view>
+                <view class="mesType">{{item.type}}</view>
+                <view class="userName">{{item.userName}}</view>
+              </view>
+              <view class="mesTitle">{{item.title}}</view>
+              <view class="operation">
+                <image mode="heightFix" src="/icon/评论.png"></image>
+                <view>{{item.comment}}</view>
+                <image mode="heightFix" src="/icon/点赞.png"></image>
+                <view>{{item.like}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 社区 -->
+    <swiper-item>
+      <scroll-view scroll-y class="tap">
+        <view class="pageTap">
+          <view class="myCom">
+            <view class="myComRow1">
+              <view class="myComTitle">我的社区</view>
+              <view class="myComOpr">编辑</view>
+              <view style="clear:both"></view>
+            </view>
+            <view class="myComRow2">
+              <view class="comBox">
+                <image mode="widthFix"
+                  src="https://th.bing.com/th/id/OIP.NDBZW6miStxVWezR2_GQEAHaII?w=160&h=180&c=7&o=5&dpr=2&pid=1.7">
+                </image>
+                <view>PC游戏</view>
+              </view>
+            </view>
+            <view class="search">
+              <image src="/icon/搜索.png"></image><input type="text" placeholder="请输入您想搜索的社区"></input>
+            </view>
+            <view class="myComRow3Title">
+              <view wx:for="{{row3Title}}" wx:key="*this" id="{{row3Index == item.id?'row3Index':''}}" bindtap="changeRow3" data-index="{{item.id}}">{{item.name}}</view>
+            </view>
+            <view class="myComRow3" bindtap="toDetail">
+              <image mode="widthFix" wx:for="{{row3List}}" src="{{url}}/yxh/community/{{item.photo}}"></image>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/feedback/feedback.wxml-->
+<view style="padding: 3vw">
+  <view class="title">用户反馈</view>
+  <view class="detail">
+    尊贵的用户，很高兴您能够选择游戏盒应用，如果您对我们小程序有任何疑问或者建议，请在下方输入框写上您的问题或者建议发送到我们后台
+  </view>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <view class="phone" bindtap="phone">通过电话联系客服 ></view>
+</view>

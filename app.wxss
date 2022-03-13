@@ -1,0 +1,67 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.page {}
+.clear{
+  clear: both;
+}
+/* 顶栏 */
+.header {
+  width: 100%;
+  height: 8vh;
+}
+
+.tapName {
+  float: left;
+  margin-left: 40rpx;
+  line-height: 8vh;
+  color: #8a8a8a
+}
+
+@keyframes scaleDraw {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.tapIndex {
+  color: black;
+  animation: scaleDraw 0.4s 1 forwards;
+}
+.tapIcon{
+  float: right;
+  margin: 2vh 25rpx 3vh 0;
+  width: 3vh;
+  height: 4vh;
+}
+.tapIcon image{
+  width: 100%;
+  height: 100%;
+}
+scroll-view {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.pageTap{
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+}
+.tapSwiper{
+  height: 92vh;
+}
+.tap{
+  height: 92vh;
+  white-space: nowrap;
+}
